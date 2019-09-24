@@ -58,14 +58,78 @@ html, body {
 }
 
 // VARIABLES 
-@open-sans-condensed:
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 3rem;
+
+@flex-display: {
+	display: flex;
+	flex-direction: row;
 }
+@full-width: 1000px;
 
 .nav-bar {
-	background-color: red;
+  display: @flex-display;
+  justify-content: flex-end;
+  border: 1px solid black;
+  width: @full-width;
+
+  a {
+	  margin: 5px 15px;
+  }
 }
-ul {
-	font-family: @open-sans-condensed;
+
+section {
+	.career {
+		// display: @flex-display;
+		justify-content: space-evenly;
+		width: @full-width;
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// FONTS 
+
+// @font-face {
+// 	font-family: Arial;
+// 	// src: url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+// 	font-size: 100px;
+// }
+// @open-sans-condensed: 'Open Sans Condensed', sans-serif;
+	// font-size: 3rem;
+
+
+// .nav-bar {
+// 	background-color: blue;
+// }
+// ul {
+// 	font-family: @open-sans-condensed;
+// 	color: @pale-green-color;
+// }
+
+// @pale-green-color: #4D926F;
+
+// @the-font-size: 10px;
+
+// ul {
+// 	color: @pale-green-color;
+// 	@font-face {
+// 		font-family: Arial;
+// 		src: url(Arial);
+// 	}
+// }
+
+// h3 {
+// 	// font-size: @the-font-size * 3;
+// 	@font-face {
+// 		font-family: Arial;
+// 		src: url(Arial);
+// 	}
+// }
