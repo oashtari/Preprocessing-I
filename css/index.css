@@ -134,3 +134,23 @@ html,
 body {
   height: 100%;
 }
+@font {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h3 {
+  background-color: red;
+}
+
+// VARIABLES 
+@open-sans-condensed {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 3rem;
+}
+
+.nav-bar {
+	background-color: red;
+}
+ul {
+	font-family: @open-sans-condensed;
+}
