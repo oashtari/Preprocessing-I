@@ -141,9 +141,19 @@ body {
   display: flex;
   flex-direction: row;
 }
+.margin {
+  margin: 50px 0px;
+}
+.line-height-20 {
+  line-height: 30px;
+}
 h3 {
   font-size: 3rem;
   margin: 15px 0px;
+}
+li {
+  font-size: 1.5rem;
+  margin: 10px 0px;
 }
 .nav-bar {
   display: flex;
@@ -178,4 +188,22 @@ section .skills #current {
 }
 section .skills #soon {
   width: 50%;
+}
+section .about {
+  width: 1000px;
+}
+section .about p {
+  width: 800px;
+  line-height: 30px;
+}
+footer {
+  margin: 50px 0px;
+  border: 1px solid blue;
+}
+footer .contact-form {
+  width: 500px;
+}
+footer .contact-info {
+  width: 500px;
+  line-height: 30px;
 }
