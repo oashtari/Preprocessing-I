@@ -243,6 +243,7 @@ section .about p {
 @media (max-width: 500px) {
   section .about p {
     width: 400px;
+    font-family: "Open Sans Condensed", sans-serif;
   }
 }
 footer {
