@@ -54,6 +54,194 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
+
+// VARIABLES 
+@full-width: 800px;
+@half-width: 50%;
+
+@image_width: 25vw;
+@image_heigth: 25vh;
+
+
+@mobile: ~'(max-width: 500px)';
+// @desktop-down: ~'(max-width: 991px)';
+// @tablet-down: ~'(max-width: 767px)';
+// @phone-down: ~'(max-width: 480px)';
+// @small-phone-down: ~'(max-width: 320px)';
+
+// h2 {
+//     font-size: 60px;
+
+//     @media @wide-screen-down { font-size: 50px; }
+//     @media @desktop-down{ font-size: 40px; }
+//     @media @tablet-down { font-size: 20px; }
+//     @media @phone-down { font-size: 15px; }
+// }
+// MIXINS 
+.border {
+	border: 1px solid blue;
+} 
+
+.flex-display {
+	display: flex;
+	flex-direction: row;
+}
+
+.margin {
+	margin: 50px 0px;
+}
+
+.line-height-20 {
+	line-height: 30px;
+}
+
+.mobile-size {
+	@media only screen and (max-width: 500px) {
+		width: 500px;
+		background: lightgrey;
+	}
+}
+
+
+
+h3 {
+	font-size: 3rem;
+	margin: 15px 0px;
+	@media @mobile { font-size: 2rem; }
+	
+}
+
+li {
+	font-size: 1.5rem;
+	margin: 10px 0px;
+	@media @mobile { font-size: 1rem; }
+}
+
+// NAVIGATION BAR 
+.nav-bar {
+	.mobile-size();
+	.flex-display();
+	justify-content: flex-end;
+	width: @full-width;
+	background-color: lightblue;
+	@media @mobile { justify-content: center; }
+
+	a {
+		margin: 20px 30px;
+	}
+}
+
+// CAREER, SKILLS and ABOUT 
+section {
+	.mobile-size();
+	.career {
+		.mobile-size();
+		.flex-display();
+		justify-content: space-evenly;
+		width: @full-width;
+		background-color: lightcyan;
+		img {
+			width: @image_width;
+			height: @image_heigth;
+			
+		}
+		
+	
+	}
+
+	.skills {
+		.mobile-size();
+		.flex-display();
+		width: @full-width;
+		.margin();
+		#current {
+			width: @half-width;
+
+		}
+		#soon {
+			width: @half-width;
+		}
+	}
+
+	.about {
+		.mobile-size() {
+		
+		};
+		width: @full-width;
+		p {
+			.mobile-size();
+			width: @full-width;
+			.line-height-20();
+			@media @mobile { width: 400px; font-family: "Open Sans Condensed", sans-serif;}
+		}
+
+	}
+}
+
+footer {
+	.mobile-size();
+	.margin();
+	
+	.contact-form{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		// float: left;
+		margin-top: 6px;
+
+		width: @full-width;
+		@media @mobile {width: 400px; }
+
+
+	}
+	.contact-info {
+		@media @mobile { color: green; width: 500px; } 
+		width: @full-width;
+		.line-height-20();
+		text-align: center;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// FONTS 
+
+// @font-face {
+// 	font-family: Arial;
+// 	// src: url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+// 	font-size: 100px;
+// }
+// @open-sans-condensed: 'Open Sans Condensed', sans-serif;
+	// font-size: 3rem;
+
+
+// .nav-bar {
+// 	background-color: blue;
+// }
+// ul {
+// 	font-family: @open-sans-condensed;
+// 	color: @pale-green-color;
+// }
+
+
+// ul {
+// 	color: @pale-green-color;
+// 	@font-face {
+// 		font-family: Arial;
+// 		src: url(Arial);
+// 	}
+// }
 

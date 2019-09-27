@@ -7,13 +7,111 @@
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
-
+  <!-- <link rel="stylesheet/less" type="text/css" href="/less/index.less" /> -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
 
 <body>
-  <h1>My Resume</h1>
+<!-- NAV right align, 4 items -->
+<header>
+  <nav class="nav-bar">
+    <a href="Work">Work</a>
+    <a href="About">About</a>
+    <a href="Skills">Skills</a>
+    <a href="Contact">Contact</a>
+  </nav>
+</header>
+
+
+
+
+
+<section>
+  <div class="career">
+    <img src="img/cozy-brand.svg" alt="Cozy logo" height="42" width="42">
+    <img class="twitter" src="img/Twitter_Logo_Blue.png" alt="Twitter logo" height="42" width="42">
+    <img src="img/CAA_logo.png" alt="CAA logo" height="42" width="42">
+  </div>
+
+  <div class="skills">
+    <div id="current">
+      <h3>Current:</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>LESS</li>
+          <li>Javascript -- fundamentals</li>
+        </ul>
+    </div>
+    
+    <div id="soon">
+      <h3>Coming Soon:</h3>
+        <ul>
+          <li>Javascript -- advanced</li>
+          <li>Node</li>
+          <li>React</li>
+          <li>Python</li>
+          <li>Java</li>
+        </ul>
+    </div>
+
+  </div>
+
+  <div class ="about">
+    <p>
+      Hi! 👻<br><br>
+      I'm an up and coming full stack web developer currently enrolled in Lambda School. (INSERT LAMBDA LOGO)<br>
+      I've been working in the technology sector for over a decade, finally making the leap from the business to the technical side.<br>
+      Having worked in various industries, at headquarters as well as remotely, on teams ranging from two to fifty, my breadth of experience in various type of work environments makes me quite flexible.<br>
+      From early on in my career, I was fortunate to have the concept of a team-first mentality imprinted into me, I will always prefer working in such environments.<br>
+      My interests range from health & nutrition, to the environment, to bio-hacking and bloackhain-enabled technologies.<br>
+      I look forward to connecting with you and exploring if there is an opportunity for us to work together.<br>
+      Thank you for taking the time to review my work.
+    </p>
+
+  </div>
+</section>
+
+<footer>
+  
+  <div class="contact-form">
+      <form action="/action_page.php">
+        <div>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+        <div>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+        <div>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:50px"></textarea>
+        </div>
+        <div>
+        <input type="submit" value="Submit">
+        </div>
+      </form>
+  </div>
+
+  <div class="contact-info">
+    <p>email: omid.ashtari.1976@gmail.com</p>
+    <!-- <br> -->
+    <p>‪(503) 468-7789‬</p>
+  </div>
+
+</footer>
+
+
 </body>
 </html>
+
+
+<!-- CSS  -->
+<!-- color and font stacks -->
+<!-- Nesting: Every selector should be nested inside the main container. Avoid having global styles unless they are element level.
+ Mixins: Create 2 mixins of your choosing. Hint: It's super helpful to use flexbox properties in mixins
+ Mobile: Use nested-at rules to provide a mobile version of your resume. Use 500px as a max-width for mobile. -->
